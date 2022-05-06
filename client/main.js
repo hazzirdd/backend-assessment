@@ -8,10 +8,10 @@ const fighterList = document.querySelector("#fighter-list")
 //2. Function
 const baseURL = `http://localhost:4000/api/fighters`
 
-const fightersCallback = ({ data: fighters }) => {
-    alert("check")
-    displayFighters(fighters)
-}
+// const fightersCallback = ({ data: fighters }) => {
+//     alert("check")
+//     displayFighters(fighters)
+// }
 
 const errCallback = err => console.log(err.response.data)
 
@@ -80,6 +80,7 @@ const addHandler = (e) => {
 
     name.value = ''
     imageURL.value = ''
+    stars.value = ''
     
 }
 
@@ -91,8 +92,8 @@ const addFighterToList = (fighter) => {
     <img src="${fighter.imageURL}" class="fighter-card-img"/>
     <p class="fighter-card-name">${fighter.name}</p>
     <p class="fighter-card-stars"> Stars: ${fighter.stars}</p>
-    <button onclick="deleteFighter(${fighter.id})">Delete Fighter</button>
-    <button onclick="updateFighter(${fighter.id})">Add a Star</button>
+    <button class="fighterbutton" onclick="deleteFighter(${fighter.id})">Delete Fighter</button>
+    <button class="fighterbutton" onclick="updateFighter(${fighter.id})">Add a Star</button><br>
     `
     fighterList.appendChild(fighterCard)
 }

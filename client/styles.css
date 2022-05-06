@@ -1,12 +1,38 @@
+html {
+    background-color: rgb(124, 172, 172);
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 #fighter-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content:space-around;
     align-items: center;
 }
 
-.fighter-card-img {
+.fighter-card {
+    border: 8px solid rgb(122, 47, 47);
+    text-align: center;
+    font-size: 25px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
 
+.fighter-card-img {
     width: 300px;
     height: 300px;
+    border: 5px solid black;
+}
+
+.fighterbutton {
+    background-color: rgb(74, 76, 180);
+    width: 110px;
+    height: 30px;
+    font-weight: bold;
 }
