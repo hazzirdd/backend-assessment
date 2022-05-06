@@ -1,4 +1,4 @@
-let globalID = 2;
+let globalID = 3;
 
 // const fighters = []
 const fighters = require('./db.json');

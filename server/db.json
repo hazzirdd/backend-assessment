@@ -4,5 +4,11 @@
         "name": "Mario",
         "imageURL" : "https://www.smashbros.com/assets_v2/img/fighter/mario/ss_1.jpg",
         "stars" : 3
+    },
+    {
+        "id": 2,
+        "name": "Samus",
+        "imageURL": "https://www.smashbros.com/assets_v2/img/fighter/samus/ss_2.jpg",
+        "stars" : 4
     }
 ]
